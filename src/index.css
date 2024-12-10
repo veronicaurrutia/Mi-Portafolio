@@ -2,36 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color:rgb(46, 46, 46);
- 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(46, 46, 46);
+
 }
 
 @keyframes typing {
     from {
-      width: 0;
+        width: 0;
     }
-    to {
-      width: 104%;
-    }
-  }
 
-  .typing-text{
-    overflow: hidden; /* Esconde el texto que aún no se "escribe" */
-    white-space: nowrap; /* Evita el salto de línea */
+    to {
+        width: 104%;
+    }
+}
+
+.typing-text {
+    overflow: hidden;
+    /* Esconde el texto que aún no se "escribe" */
+    white-space: nowrap;
+    /* Evita el salto de línea */
     content: '|';
     display: inline-block;
-    font-size: 1.6rem; /* Tamaño del texto */
-    border-right: 2px solid #A78976 ; /* Simula el cursor */
-    animation: typing 4s steps(28, end) infinite alternate,blink 0.7s step-end infinite;
+    font-size: 1.6rem;
+    /* Tamaño del texto */
+    border-right: 2px solid #A78976;
+    /* Simula el cursor */
+    animation: typing 4s steps(28, end) infinite alternate, blink 0.7s step-end infinite;
     letter-spacing: .2rem;
     text-align: start;
     font-family: 'Cooper Hewitt';
     right: 0;
     position: relative;
-  }
-  @keyframes blink {
+}
+
+@keyframes blink {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
+}
