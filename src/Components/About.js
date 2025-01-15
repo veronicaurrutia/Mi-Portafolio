@@ -5,13 +5,15 @@ const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          setIsVisible(false); // Resetea el estado para activar la animación
-          setTimeout(() => setIsVisible(true), 50); // Reaplica la animación
+          setIsVisible(true); // Activa el efecto cuando la sección es visible
+        } else {
+          setIsVisible(false); // Desactiva el efecto cuando la sección deja de ser visible
         }
       },
       { threshold: 0.3} // Cuando el 30% de la sección es visible
@@ -33,7 +35,6 @@ const About = () => {
       className="relative min-h-screen bg-darkFond text-white flex items-center justify-center px-8 md:px-20 lg:px-32"
     >
       {/* Bordes superior e inferior con degradado */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
 
       {/* Contenedor general */}
@@ -46,7 +47,7 @@ const About = () => {
         >
           <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
           <h3 className="text-2xl font-semibold mb-4 text-brown-500">
-            Mariana Arias
+            Veronicá Urrutia
           </h3>
           <p className="text-gray-300 mb-6 leading-relaxed text-lg">
             Soy autodidacta de Desarrollo Web enfocado en programación Frontend.
