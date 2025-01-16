@@ -67,7 +67,7 @@ const Projects = () => {
       ref={projectsRef}
       className="min-h-screen bg-darkStill text-white py-10 px-4 sm:px-8 lg:px-16 flex flex-col items-center justify-center"
     >
-          
+           
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
       <div
