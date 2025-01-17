@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://veronicaurrutia.github.io/Portafolio2",
+    "homepage": "https://veronicaurrutia.github.io/Portafolio-React",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
