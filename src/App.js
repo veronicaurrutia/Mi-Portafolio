@@ -11,7 +11,8 @@ import Skills from './Components/Skills'
 
 function App() {
   return (
- <Routes>
+ <Router basename="/Portafolio-React">
+  <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/Navbar" element={<Navbar />} />
   <Route path="/about" element={<About />} />
@@ -20,6 +21,7 @@ function App() {
   <Route path="/Projects" element={<Projects />} />
 
  </Routes>
+ </Router>
   );
 }
 
