@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root')); // Crear el r
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/Portafolio-React">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
