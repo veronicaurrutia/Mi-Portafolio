@@ -40,14 +40,6 @@ function Home() {
             <div className="mt-8 flex gap-4">
               <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white transition-all duration-500 hover:bg-customBrown hover:shadow-xs hover:text-white">
                 <a
-                  href="/CV.pdf" // Ruta del archivo
-                  download="Mi_Curriculum.pdf"
-                >
-                  Descargar CV
-                </a>
-              </button>
-              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white transition-all duration-500 hover:bg-customBrown hover:shadow-xs hover:text-white">
-                <a
                   href="https://www.linkedin.com/in/veronica-urrutia/"
                   target="_blank"
                   rel="noopener noreferrer"
