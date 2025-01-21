@@ -79,46 +79,48 @@ const Projects = () => {
           Proyectos
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group block overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 "
-            >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-48 object-cover transition-all duration-300 group-hover:opacity-80"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {project.name}
-                </h3>
-                <p className="text-sm text-gray-400 mb-4">
-                  {project.description}
-                </p>
-                <div className="flex justify-between items-center">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-2.5 px-6 text-sm rounded-full font-semibold text-white transition-all duration-500 hover:bg-customBrown hover:shadow-xs hover:text-white"
-                  >
-                    Ver Proyecto
-                  </a>
-                  <a
-                    href={project.links}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="py-2.5 px-6 text-sm rounded-full font-semibold text-white transition-all duration-500 hover:bg-customBrown hover:shadow-xs hover:text-white"
-                  >
-                    GitHub
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  {projects.map((project, index) => (
+    <div
+      key={index}
+      className="group block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+    >
+      <div className="relative">
+        <img
+          src={project.image}
+          alt={project.name}
+          className="w-full h-32 object-cover transition-all duration-300 group-hover:opacity-80"
+        />
+        <h3 className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm font-semibold px-2 py-1 rounded">
+          {project.name}
+        </h3>
+      </div>
+      <div className="p-4">
+        <p className="text-xs text-gray-400 mb-3 line-clamp-3">
+          {project.description}
+        </p>
+        <div className="flex justify-between items-center">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-1 px-4 text-xs rounded-full font-semibold text-white bg-customBrown hover:bg-opacity-80 transition-all"
+          >
+            Ver Proyecto
+          </a>
+          <a
+            href={project.links}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="py-1 px-4 text-xs rounded-full font-semibold text-white bg-customBrown hover:bg-opacity-80 transition-all"
+          >
+            GitHub
+          </a>
         </div>
+      </div>
+    </div>
+  ))}
+</div>
       </div>
     </section>
   );
