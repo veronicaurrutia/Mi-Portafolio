@@ -46,9 +46,6 @@ const About = () => {
           }`}
         >
           <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
-          <h3 className="text-2xl font-semibold mb-4 text-brown-500">
-            Veronicá Urrutia
-          </h3>
           <p className="text-gray-300 mb-6 leading-relaxed text-lg">
             Soy autodidacta de Desarrollo Web enfocado en programación Frontend.
             Aspiro a conseguir empleo en el mundo del Desarrollo Web, adquirir
