@@ -10,15 +10,15 @@ import Css from "./img/Css.png";
 import Html from "./img/Html.png";
 
 const skills = [
-  { name: "HTML 5",description: "Servicios en la nube", image: Html },
-  { name: "React",description: "Servicios en la nube", image: react },
-  { name: "JavaScript",description: "Servicios en la nube", image: Js},
-  { name: "Sql",description: "Servicios en la nube", image: Sql },
-  { name: "Tailwind",description: "Servicios en la nube", image: Tailwind },
-  { name: "GitHub",description: "Servicios en la nube", image: GitHub },
-  { name: "Css",description: "Servicios en la nube", image: Css},
-  { name: "Trello",description: "Servicios en la nube", image: Trello },
-  { name: "Azure",description: "Servicios en la nube", image: Azure },
+  { name: "HTML 5", description: "Tengo una experiencia solida en el uso de HTML5 para el desarrollo y diseño de proyectos web, creando estructuras semánticas claras y eficientes.", image: Html },
+  { name: "React", description: "He trabajado con el desarrollo de interfaces de usuario dinámicas funcionales, la definición, testeo y mejora de componentes reutilizables.", image: react },
+  { name: "Sql", description: "He desempeñado tareas como la creación y optimización de consultas para manejar grandes volúmenes de información, gestión y modelado de bases de datos, extracción de datos.", image: Sql },
+  { name: "Tailwind", description: "Utilizo su sistema de clases utilitarias para aplicar estilos de manera eficiente, lo que me permite crear diseños responsivos y mantener el código limpio y organizado.", image: Tailwind },
+  { name: "JavaScript", description: "Me ha permitido implementar soluciones personalizadas para resolver problemas específicos, optimizando la lógica y que el código sea eficiente y mantenible para la manipulación del DOM como el desarrollo de aplicaciones.", image: Js },
+  { name: "Css", description: "He creado diseños responsivos que se adaptan a diferentes dispositivos y pantallas, utilizando técnicas modernas como Flexbox y Grid para lograr estructuras dinámicas y flexibles.", image: Css },
+  { name: "Trello", description: "He utilizado Trello como una herramienta clave para la gestión de proyectos y la organización de tareas, tanto de manera individual como en equipo.", image: Trello },
+  { name: "Azure", description: "Tengo experiencia en el uso de Azure DevOps, incluyendo la configuración de organizaciones y proyectos, la implementación de la metodología Agile y la centralización de documentación.", image: Azure },
+  { name: "GitHub", description: "Mi experiencia incluye la resolución de conflictos, revisión de código a través de pull requests y documentación detallada en los repositorios para facilitar la colaboración en equipo.", image: GitHub },
 ];
 
 const Skills = () => {
@@ -47,36 +47,32 @@ const Skills = () => {
     <section
       id="skills"
       ref={skillsRef}
-        className="relative min-h-screen bg-brownDrak text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24"
+      className="relative min-h-screen bg-brownDrak text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24"
     >
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
-
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">
           Habilidades
         </h2>
         <div
-          className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center transition-all duration-1000 ${
+          className={`grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-12 justify-items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
           }`}
         >
           {skills.map((skill, index) => (
             <div
               key={index}
-              className= "relative group p-4 sm:p-6 rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              className="relative group w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              {/* Imagen */}
               <img
                 src={skill.image}
                 alt={`Logo de ${skill.name}`}
-                className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 mx-auto"
+                className="w-full h-full object-contain"
               />
-              {/* Texto oculto, visible solo en hover */}
-              <div className="font-medium inset-0 flex flex-col items-center justify-center bg-translate bg-opacity-50 text-center p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-sm sm:text-base font-bold">
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-xs sm:text-sm font-bold">
                   {skill.name}
                 </p>
-                <p className="text-gray-300 text-xs sm:text-sm mt-1">
+                <p className="text-gray-300 text-[10px] sm:text-xs mt-1 px-2">
                   {skill.description}
                 </p>
               </div>
