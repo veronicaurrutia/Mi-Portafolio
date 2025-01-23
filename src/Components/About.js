@@ -47,12 +47,14 @@ const About = () => {
         >
           <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
           <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-            Soy autodidacta de Desarrollo Web enfocado en programación Frontend.
-            Aspiro a conseguir empleo en el mundo del Desarrollo Web, adquirir
-            experiencia, nuevos conocimientos y fortalecer mi vida profesional.
+          Tengo experiencia en diseño y desarrollo web, así como en pruebas y depuración 
+          de código. Soy experto en React, HTML, CSS, JavaScript,Tailwind y SQL. 
+          En mi puesto anterior en Rayensalud, diseñé y desarrollé proyectos web. 
+          Identifiqué problemas y creé soluciones. También probé interfaces de usuario y documenté mi trabajo. Mi experiencia en enfermería me ha enseñado la importancia del trabajo en equipo y la atención al detalle. Soy adaptable y proactivo. Disfruto trabajando en entornos dinámicos y estoy ansioso por crecer en mi carrera.
+           Creo que mis habilidades y experiencia se alinean bien con sus necesidades.
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Soy una persona empática y entusiasta, con competencias enfocadas en
+            Soy una persona empática, autodidacta y entusiasta, con competencias enfocadas en
             el trabajo en equipo, comunicación asertiva, resolución de
             problemas, responsable y proactiva. Me gusta aprender de los demás y
             superarme continuamente.
