@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portafolio-React/static/css/main.b233946d.css",
-    "main.js": "/Portafolio-React/static/js/main.f91eaad8.js",
-    "static/media/burger.png": "/Portafolio-React/static/media/burger.252dda838ea489c670bc.png",
-    "static/media/React.png": "/Portafolio-React/static/media/React.6bcffb56bd0efaa47767.png",
-    "static/media/yo.jpeg": "/Portafolio-React/static/media/yo.b4051191b536f7fb98a7.jpeg",
-    "static/media/Sql1.jpg": "/Portafolio-React/static/media/Sql1.c7881fc2f5d0a0d31ac0.jpg",
-    "static/media/red social.png": "/Portafolio-React/static/media/red social.91db12bf2c8714272c1c.png",
-    "static/media/mi.jpeg": "/Portafolio-React/static/media/mi.f1db4858c9d3da1daba8.jpeg",
-    "static/media/pet.png": "/Portafolio-React/static/media/pet.89d89beb558aa2495338.png",
-    "static/media/logo2.jpg": "/Portafolio-React/static/media/logo2.643cd909c6c3fbe2ea64.jpg",
-    "static/media/Azure1.webp": "/Portafolio-React/static/media/Azure1.ddaefd52f95270d8fd96.webp",
-    "index.html": "/Portafolio-React/index.html",
-    "main.b233946d.css.map": "/Portafolio-React/static/css/main.b233946d.css.map",
-    "main.f91eaad8.js.map": "/Portafolio-React/static/js/main.f91eaad8.js.map"
+    "main.css": "/Mi-Portafolio/static/css/main.b233946d.css",
+    "main.js": "/Mi-Portafolio/static/js/main.ca33427b.js",
+    "static/media/burger.png": "/Mi-Portafolio/static/media/burger.252dda838ea489c670bc.png",
+    "static/media/React.png": "/Mi-Portafolio/static/media/React.6bcffb56bd0efaa47767.png",
+    "static/media/yo.jpeg": "/Mi-Portafolio/static/media/yo.b4051191b536f7fb98a7.jpeg",
+    "static/media/Sql1.jpg": "/Mi-Portafolio/static/media/Sql1.c7881fc2f5d0a0d31ac0.jpg",
+    "static/media/red social.png": "/Mi-Portafolio/static/media/red social.91db12bf2c8714272c1c.png",
+    "static/media/mi.jpeg": "/Mi-Portafolio/static/media/mi.f1db4858c9d3da1daba8.jpeg",
+    "static/media/pet.png": "/Mi-Portafolio/static/media/pet.89d89beb558aa2495338.png",
+    "static/media/logo2.jpg": "/Mi-Portafolio/static/media/logo2.643cd909c6c3fbe2ea64.jpg",
+    "static/media/Azure1.webp": "/Mi-Portafolio/static/media/Azure1.ddaefd52f95270d8fd96.webp",
+    "index.html": "/Mi-Portafolio/index.html",
+    "main.b233946d.css.map": "/Mi-Portafolio/static/css/main.b233946d.css.map",
+    "main.ca33427b.js.map": "/Mi-Portafolio/static/js/main.ca33427b.js.map"
   },
   "entrypoints": [
     "static/css/main.b233946d.css",
-    "static/js/main.f91eaad8.js"
+    "static/js/main.ca33427b.js"
   ]
 }
