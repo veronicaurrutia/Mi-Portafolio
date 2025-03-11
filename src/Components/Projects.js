@@ -78,7 +78,6 @@ const Projects = () => {
         <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10">
           Proyectos
         </h2>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
   {projects.map((project, index) => (
     <div
