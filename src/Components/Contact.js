@@ -63,12 +63,12 @@ const Contact = () => {
 
       {/* Formulario de contacto centrado */}
       <div
-        className={`w-full max-w-lg bg-[#b38b7d] p-8 rounded-lg shadow-lg transition-all duration-1000 ${
+        className={`w-full max-w-lg mx-auto bg-[#b38b7d] p-6 sm:p-8 rounded-lg shadow-lg transition-all duration-1000 ${
           isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"
         }`}
       >
-        <h2 className="text-4xl font-bold mb-6 text-center">Contacto</h2>
-        <p className="mb-6 text-center text-gray-200">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-center">Contacto</h2>
+        <p className="mb-4 sm:mb-6 text-center text-gray-200 text-sm sm:text-base">
           Completa el siguiente formulario y me pondré en contacto contigo lo
           antes posible.
         </p>

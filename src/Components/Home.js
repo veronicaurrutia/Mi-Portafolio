@@ -17,29 +17,29 @@ function Home() {
       </div>
 
       {/* Contenido principal */}
-      <div className="h-screen flex flex-col justify-center items-center px-8 md:px-20 lg:px-32 pt-16">
-        <div className="flex flex-col md:flex-row-reverse justify-between items-center w-full max-w-6xl">
+      <div className="h-screen flex flex-col justify-center items-center px-4 sm:px-8 md:px-20 lg:px-32 pt-16">
+        <div className="flex flex-col lg:flex-row-reverse justify-between items-center w-full max-w-6xl gap-8">
           {/* Texto con efecto */}
-          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold animate-fade-in">
+          <div className="lg:w-1/2 text-center lg:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in">
               ¡Hola! Soy
               <br />
               <span className="text-white animate-zoom-in-out">Verónica Urrutia</span>
             </h1>
             <div className="typing-container">
-              <p className="typing-text animate-typing mt-4">
+              <p className="typing-text animate-typing mt-4 text-sm sm:text-base lg:text-lg">
                 Desarrolladora Web Frontend
               </p>
             </div>
-            <p className="text-lg md:text-xl text-white mt-4 animate-zoom-in-out">
+            <p className="text-base sm:text-lg md:text-xl text-white mt-4 animate-zoom-in-out leading-relaxed">
               Desarrolladora Frontend especializada en crear experiencias digitales 
               intuitivas y atractivas. Me apasiona desarrollar aplicaciones web modernas 
               que ofrezcan la mejor experiencia al usuario, combinando funcionalidad 
               excepcional con diseño estético.
             </p>
             {/* Botones */}
-            <div className="mt-8 flex gap-4 flex-wrap">
-              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white bg-customBrown transition-all duration-500 hover:bg-opacity-80 hover:shadow-lg">
+            <div className="mt-6 sm:mt-8 flex gap-3 sm:gap-4 flex-wrap justify-center lg:justify-start">
+              <button className="py-2 sm:py-2.5 px-4 sm:px-6 text-sm rounded-full font-semibold text-white bg-customBrown transition-all duration-500 hover:bg-opacity-80 hover:shadow-lg">
                 <a
                   href="https://www.linkedin.com/in/veronica-urrutia/"
                   target="_blank"
@@ -49,7 +49,7 @@ function Home() {
                   LinkedIn
                 </a>
               </button>
-              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white border border-customBrown transition-all duration-500 hover:bg-customBrown hover:shadow-lg">
+              <button className="py-2 sm:py-2.5 px-4 sm:px-6 text-sm rounded-full font-semibold text-white border border-customBrown transition-all duration-500 hover:bg-customBrown hover:shadow-lg">
                 <a
                   href="mailto:vero.urrutia.b@gmail.com"
                   className="block"
@@ -61,8 +61,8 @@ function Home() {
           </div>
 
           {/* Imagen de perfil con efecto */}
-          <div className="md:w-1/2 flex justify-center items-center">
-            <div className="w-64 h-64 rounded-full overflow-hidden group">
+          <div className="lg:w-1/2 flex justify-center items-center">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden group">
               <img
                 src={Yo}
                 className="w-full h-full object-cover animate-zoom-in-out group-hover:scale-110 transition-transform duration-1000"

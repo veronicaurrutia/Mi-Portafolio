@@ -38,22 +38,22 @@ const About = () => {
       <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-customBrown to-transparent"></div>
 
       {/* Contenedor general */}
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Contenido de texto */}
         <div
-          className={`md:w-1/2 text-left transition-all duration-1000 ${
+          className={`lg:w-1/2 text-left transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-20"
           }`}
         >
-          <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white">Sobre mí</h2>
+          <p className="text-gray-300 mb-6 leading-relaxed text-base sm:text-lg">
             Soy una desarrolladora web frontend con sólida experiencia en diseño y desarrollo 
             de aplicaciones web modernas. Me especializo en React, HTML, CSS, JavaScript, 
             Tailwind CSS y SQL. Durante mi experiencia en Rayensalud, diseñé y desarrollé 
             proyectos web completos, desde la identificación de problemas hasta la 
             implementación de soluciones efectivas.
           </p>
-          <p className="text-gray-300 leading-relaxed text-lg">
+          <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
             Mi background en enfermería me ha proporcionado habilidades excepcionales en 
             trabajo en equipo, atención al detalle y comunicación efectiva. Soy una persona 
             empática, autodidacta y entusiasta, con un enfoque proactivo hacia la resolución 
@@ -64,11 +64,11 @@ const About = () => {
 
         {/* Imagen al lado derecho */}
         <div
-          className={`md:w-1/2 flex justify-center items-center transition-all duration-1000 ${
+          className={`lg:w-1/2 flex justify-center items-center transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-20"
           }`}
         >
-          <div className="relative w-72 h-72 rounded-full overflow-hidden shadow-lg">
+          <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-lg">
             <img 
               src={Mi} 
               className="w-full h-full object-cover" 

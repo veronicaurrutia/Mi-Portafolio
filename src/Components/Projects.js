@@ -75,35 +75,35 @@ const Projects = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         }`}
       >
-        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-10">
           Proyectos
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
   {projects.map((project, index) => (
     <div
       key={index}
-      className="group block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+      className="group block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105 bg-darkFond"
     >
       <div className="relative">
         <img
           src={project.image}
           alt={`Captura de pantalla del proyecto ${project.name}`}
-          className="w-full h-32 object-cover transition-all duration-300 group-hover:opacity-80"
+          className="w-full h-32 sm:h-36 object-cover transition-all duration-300 group-hover:opacity-80"
         />
-        <h3 className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm font-semibold px-2 py-1 rounded">
+        <h3 className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-xs sm:text-sm font-semibold px-2 py-1 rounded">
           {project.name}
         </h3>
       </div>
-      <div className="p-4">
-        <p className="text-xs text-gray-400 mb-3 line-clamp-3">
+      <div className="p-3 sm:p-4">
+        <p className="text-xs sm:text-sm text-gray-400 mb-3 line-clamp-3 leading-relaxed">
           {project.description}
         </p>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
           <a
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-1 px-4 text-xs rounded-full font-semibold text-white bg-customBrown hover:bg-opacity-80 transition-all"
+            className="w-full sm:w-auto py-1.5 px-3 sm:px-4 text-xs text-center rounded-full font-semibold text-white bg-customBrown hover:bg-opacity-80 transition-all"
           >
             Ver Proyecto
           </a>
@@ -111,7 +111,7 @@ const Projects = () => {
             href={project.links}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-1 px-4 text-xs rounded-full font-semibold text-white bg-customBrown hover:bg-opacity-80 transition-all"
+            className="w-full sm:w-auto py-1.5 px-3 sm:px-4 text-xs text-center rounded-full font-semibold text-white border border-customBrown hover:bg-customBrown hover:bg-opacity-80 transition-all"
           >
             GitHub
           </a>
