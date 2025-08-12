@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           <img
             src={Logo}
-            alt="Logo"
+            alt="Verónica Urrutia - Logo del portafolio"
             className="w-full h-2/12 lg-h-full  transition-transform duration-300"
           />
         </a>

@@ -87,7 +87,7 @@ const Projects = () => {
       <div className="relative">
         <img
           src={project.image}
-          alt={project.name}
+          alt={`Captura de pantalla del proyecto ${project.name}`}
           className="w-full h-32 object-cover transition-all duration-300 group-hover:opacity-80"
         />
         <h3 className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm font-semibold px-2 py-1 rounded">

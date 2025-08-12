@@ -11,7 +11,7 @@ module.exports = {
          brownDrak:' rgb(46, 46, 46)',
          browWhite:'rgba(167, 137, 118, 1)',
          darkFond:'#292929',
-         darkStill:'##1F1F1F',
+         darkStill:'#1F1F1F',
       },
       animation: {
         typing: 'typing 4s steps(28, end) infinite alternate',

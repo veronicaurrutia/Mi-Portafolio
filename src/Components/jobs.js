@@ -48,24 +48,22 @@ const Jobs = () => {
             Rayensalud
           </h3>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
-            En mi tiempo en Rayen Salud, fui parte de un equipo que transformó y
-            optimizó experiencias digitales, trabajando con tecnologías como
-            React, HTML, CSS, y JavaScript. Allí aprendí a gestionar el ciclo
-            completo de desarrollo, desde la detección de errores hasta la
-            implementación de soluciones prácticas, y realicé pruebas
-            exhaustivas de código y producto, garantizando la calidad y
-            estabilidad de las aplicaciones.
+            En Rayen Salud, formé parte de un equipo especializado en la transformación y 
+            optimización de experiencias digitales en el sector salud. Trabajé con tecnologías 
+            como React, HTML, CSS, JavaScript, Aurelia y C#, gestionando el ciclo completo 
+            de desarrollo desde la detección de errores hasta la implementación de soluciones.
             <br />
             <br />
-            Además, adquirí experiencia utilizando Aurelia y C#, lo que amplió
-            mi conocimiento en frameworks y lenguajes avanzados, y fortalecí mi
-            capacidad para trabajar tanto en contextos de front-end como de
-            back-end. También tuve la oportunidad de profundizar en la
-            integración de bases de datos, permitiéndome abordar proyectos de
-            manera integral. Mi compromiso con el aprendizaje continuo me llevó
-            a obtener certificaciones en SQL y UX/UI, herramientas que
-            complementan mi capacidad para diseñar experiencias de usuario
-            eficientes y gestionar información de manera estructurada.
+            Mis responsabilidades incluyeron el desarrollo de interfaces de usuario, pruebas 
+            exhaustivas de código y productos, garantizando la calidad y estabilidad de las 
+            aplicaciones. Adquirí experiencia tanto en front-end como back-end, trabajando 
+            con integración de bases de datos y desarrollando soluciones integrales.
+            <br />
+            <br />
+            Durante este período, obtuve certificaciones en SQL y UX/UI, complementando mi 
+            capacidad para diseñar experiencias de usuario eficientes y gestionar información 
+            de manera estructurada. Esta experiencia fortaleció mi compromiso con el 
+            aprendizaje continuo y la excelencia técnica.
           </p>
         </div>
         <div
@@ -83,7 +81,7 @@ const Jobs = () => {
               <img
                 src={rayen}
                 className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
-                alt="Rayen Salud"
+                alt="Logo de Rayen Salud - Empresa de tecnología en salud"
               />
             </div>
           </a>

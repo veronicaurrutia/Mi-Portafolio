@@ -22,30 +22,39 @@ function Home() {
           {/* Texto con efecto */}
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-bold animate-fade-in">
-              Hola! Soy
+              ¡Hola! Soy
               <br />
-              <span className="text-white animate-zoom-in-out">Veronica Urrutia</span>
+              <span className="text-white animate-zoom-in-out">Verónica Urrutia</span>
             </h1>
             <div className="typing-container">
               <p className="typing-text animate-typing mt-4">
-                Desarrolladora Web Front-End
+                Desarrolladora Web Frontend
               </p>
             </div>
             <p className="text-lg md:text-xl text-white mt-4 animate-zoom-in-out">
-              Desarrolladora Frontend apasionada por los diseños intuitivos y
-              estéticamente agradables. Busco crear proyectos que ofrezcan la
-              mejor experiencia al usuario.
+              Desarrolladora Frontend especializada en crear experiencias digitales 
+              intuitivas y atractivas. Me apasiona desarrollar aplicaciones web modernas 
+              que ofrezcan la mejor experiencia al usuario, combinando funcionalidad 
+              excepcional con diseño estético.
             </p>
             {/* Botones */}
-            <div className="mt-8 flex gap-4">
-              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white transition-all duration-500 hover:bg-customBrown hover:shadow-xs hover:text-white">
+            <div className="mt-8 flex gap-4 flex-wrap">
+              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white bg-customBrown transition-all duration-500 hover:bg-opacity-80 hover:shadow-lg">
                 <a
                   href="https://www.linkedin.com/in/veronica-urrutia/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative"
+                  className="block"
                 >
-                  Linkedin
+                  LinkedIn
+                </a>
+              </button>
+              <button className="py-2.5 px-6 text-sm rounded-full font-semibold text-white border border-customBrown transition-all duration-500 hover:bg-customBrown hover:shadow-lg">
+                <a
+                  href="mailto:vero.urrutia.b@gmail.com"
+                  className="block"
+                >
+                  Contáctame
                 </a>
               </button>
             </div>
@@ -57,7 +66,7 @@ function Home() {
               <img
                 src={Yo}
                 className="w-full h-full object-cover animate-zoom-in-out group-hover:scale-110 transition-transform duration-1000"
-                alt="Yo"
+                alt="Verónica Urrutia - Desarrolladora Web Frontend"
               />
             </div>
           </div>

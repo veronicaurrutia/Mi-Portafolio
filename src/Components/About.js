@@ -47,17 +47,18 @@ const About = () => {
         >
           <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
           <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-          Tengo experiencia en diseño y desarrollo web, así como en pruebas y depuración 
-          de código. Soy experto en React, HTML, CSS, JavaScript,Tailwind y SQL. 
-          En mi puesto anterior en Rayensalud, diseñé y desarrollé proyectos web. 
-          Identifiqué problemas y creé soluciones. También probé interfaces de usuario y documenté mi trabajo. Mi experiencia en enfermería me ha enseñado la importancia del trabajo en equipo y la atención al detalle. Soy adaptable y proactivo. Disfruto trabajando en entornos dinámicos y estoy ansioso por crecer en mi carrera.
-           Creo que mis habilidades y experiencia se alinean bien con sus necesidades.
+            Soy una desarrolladora web frontend con sólida experiencia en diseño y desarrollo 
+            de aplicaciones web modernas. Me especializo en React, HTML, CSS, JavaScript, 
+            Tailwind CSS y SQL. Durante mi experiencia en Rayensalud, diseñé y desarrollé 
+            proyectos web completos, desde la identificación de problemas hasta la 
+            implementación de soluciones efectivas.
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Soy una persona empática, autodidacta y entusiasta, con competencias enfocadas en
-            el trabajo en equipo, comunicación asertiva, resolución de
-            problemas, responsable y proactiva. Me gusta aprender de los demás y
-            superarme continuamente.
+            Mi background en enfermería me ha proporcionado habilidades excepcionales en 
+            trabajo en equipo, atención al detalle y comunicación efectiva. Soy una persona 
+            empática, autodidacta y entusiasta, con un enfoque proactivo hacia la resolución 
+            de problemas y el aprendizaje continuo. Me apasiona crear experiencias digitales 
+            intuitivas y estéticamente atractivas que brinden la mejor experiencia al usuario.
           </p>
         </div>
 
@@ -68,7 +69,11 @@ const About = () => {
           }`}
         >
           <div className="relative w-72 h-72 rounded-full overflow-hidden shadow-lg">
-            <img src={Mi} className="w-full h-full object-cover" />
+            <img 
+              src={Mi} 
+              className="w-full h-full object-cover" 
+              alt="Verónica Urrutia - Desarrolladora Frontend"
+            />
             <div className="absolute rounded-lg border-0"></div>
           </div>
         </div>

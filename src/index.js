@@ -1,16 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Cambiar a 'react-dom/client' para usar createRoot
-import './index.css'; // Si tienes estilos
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
 
-
-const root = ReactDOM.createRoot(document.getElementById('root')); // Crear el root para React 18
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/Mi-Portafolio">
-      <App />
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );

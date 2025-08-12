@@ -3,8 +3,9 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
   const sectionRef = useRef(null);
-  const formRef = useRef(null); // Asegúrate de usar el ref correctamente
+  const formRef = useRef(null);
 
  
    useEffect(() => {
@@ -28,7 +29,8 @@ const Contact = () => {
   }, []);
 
   const sendEmail = (e) => {
-    e.preventDefault(); // Previene la recarga de la página al enviar el formulario
+    e.preventDefault();
+    setSubmitStatus(null);
 
     emailjs
       .sendForm(
@@ -40,16 +42,14 @@ const Contact = () => {
       .then(
         (result) => {
           console.log("Correo enviado:", result.text);
-          // alert("Mensaje enviado correctamente.");
+          setSubmitStatus('success');
+          formRef.current.reset();
         },
         (error) => {
           console.error("Error al enviar el correo:", error.text);
-          // alert("Hubo un error al enviar el mensaje. Inténtalo nuevamente.");
+          setSubmitStatus('error');
         }
       );
-
-    // Limpia los campos del formulario
-    formRef.current.reset();
   };
 
   return (
@@ -72,33 +72,53 @@ const Contact = () => {
           Completa el siguiente formulario y me pondré en contacto contigo lo
           antes posible.
         </p>
+        
+        {/* Status messages */}
+        {submitStatus === 'success' && (
+          <div className="mb-4 p-3 bg-green-600 text-white rounded-lg text-center">
+            ¡Mensaje enviado correctamente! Te responderé pronto.
+          </div>
+        )}
+        
+        {submitStatus === 'error' && (
+          <div className="mb-4 p-3 bg-red-600 text-white rounded-lg text-center">
+            Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente.
+          </div>
+        )}
         <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
           <input
             type="text"
-            name="nombre" // Nombre del campo para la plantilla de EmailJS
-            placeholder="Nombre"
+            name="nombre"
+            placeholder="Nombre completo"
+            className="w-full px-4 py-2 rounded-lg border border-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-gray-700"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
             className="w-full px-4 py-2 rounded-lg border border-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-gray-700"
             required
           />
           <input
             type="text"
-            name="asunto" // Nombre del campo para la plantilla de EmailJS
+            name="asunto"
             placeholder="Asunto"
             className="w-full px-4 py-2 rounded-lg border border-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-gray-700"
             required
           />
           <textarea
-            name="mensaje" // Nombre del campo para la plantilla de EmailJS
-            placeholder="Mensaje | Message"
+            name="mensaje"
+            placeholder="Mensaje"
             rows="4"
             className="w-full px-4 py-2 rounded-lg border border-gray-400 text-black focus:outline-none focus:ring-2 focus:ring-gray-700"
             required
           ></textarea>
           <button
             type="submit"
-            className="w-full bg-[#8c6e63] text-white py-2 rounded-lg hover:bg-[#6c4f4a] transition-all duration-300"
+            className="w-full bg-[#8c6e63] text-white py-2 rounded-lg hover:bg-[#6c4f4a] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-gray-700"
           >
-            Enviar
+            Enviar mensaje
           </button>
         </form>
       </div>
