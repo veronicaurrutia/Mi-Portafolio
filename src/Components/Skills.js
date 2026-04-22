@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { MdDesignServices } from "react-icons/md";
 import react from "./img/React.png";
 import Js from "./img/Js.png";
 import Azure from "./img/Azure1.webp";
@@ -12,13 +13,14 @@ import Html from "./img/Html.png";
 const skills = [
   { name: "HTML 5", description: "Tengo una experiencia solida en el uso de HTML5 para el desarrollo y diseño de proyectos web, creando estructuras semánticas claras y eficientes.", image: Html },
   { name: "React", description: "He trabajado con el desarrollo de interfaces de usuario dinámicas funcionales, la definición, testeo y mejora de componentes reutilizables.", image: react },
-  { name: "Sql", description: "He desempeñado tareas como la creación y optimización de consultas para manejar grandes volúmenes de información, gestión y modelado de bases de datos, extracción de datos.", image: Sql },
-  { name: "Tailwind", description: "Utilizo su sistema de clases utilitarias para aplicar estilos de manera eficiente, lo que me permite crear diseños responsivos y mantener el código limpio y organizado.", image: Tailwind },
   { name: "JavaScript", description: "Me ha permitido implementar soluciones personalizadas para resolver problemas específicos, optimizando la lógica y que el código sea eficiente y mantenible para la manipulación del DOM como el desarrollo de aplicaciones.", image: Js },
-  { name: "Css", description: "He creado diseños responsivos que se adaptan a diferentes dispositivos y pantallas, utilizando técnicas modernas como Flexbox y Grid para lograr estructuras dinámicas y flexibles.", image: Css },
-  { name: "Trello", description: "He utilizado Trello como una herramienta clave para la gestión de proyectos y la organización de tareas, tanto de manera individual como en equipo.", image: Trello },
+  { name: "CSS", description: "He creado diseños responsivos que se adaptan a diferentes dispositivos y pantallas, utilizando técnicas modernas como Flexbox y Grid para lograr estructuras dinámicas y flexibles.", image: Css },
+  { name: "Tailwind", description: "Utilizo su sistema de clases utilitarias para aplicar estilos de manera eficiente, lo que me permite crear diseños responsivos y mantener el código limpio y organizado.", image: Tailwind },
+  { name: "SQL", description: "He desempeñado tareas como la creación y optimización de consultas para manejar grandes volúmenes de información, gestión y modelado de bases de datos, extracción de datos.", image: Sql },
+  { name: "UX/UI", description: "Certificada en diseño UX/UI. Creo experiencias centradas en el usuario, combinando investigación, prototipado y principios de diseño para lograr interfaces intuitivas y estéticamente sólidas.", image: null, icon: MdDesignServices },
   { name: "Azure", description: "Tengo experiencia en el uso de Azure DevOps, incluyendo la configuración de organizaciones y proyectos, la implementación de la metodología Agile y la centralización de documentación.", image: Azure },
   { name: "GitHub", description: "Mi experiencia incluye la resolución de conflictos, revisión de código a través de pull requests y documentación detallada en los repositorios para facilitar la colaboración en equipo.", image: GitHub },
+  { name: "Trello", description: "He utilizado Trello como una herramienta clave para la gestión de proyectos y la organización de tareas, tanto de manera individual como en equipo.", image: Trello },
 ];
 
 const Skills = () => {
@@ -63,12 +65,19 @@ const Skills = () => {
               key={index}
               className="relative group w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-lg hover:scale-105 hover:shadow-lg transition-all duration-300 cursor-pointer"
             >
-              <img
-                src={skill.image}
-                alt={`Logo de ${skill.name}`}
-                className="w-full h-full object-contain"
-              />
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {skill.image ? (
+                <img
+                  src={skill.image}
+                  alt={`Logo de ${skill.name}`}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <div className="w-full h-full flex flex-col items-center justify-center bg-customBrown bg-opacity-30 rounded-lg border border-customBrown border-opacity-50">
+                  <skill.icon className="text-customBrown w-12 h-12 sm:w-14 sm:h-14" />
+                  <span className="text-white text-xs font-bold mt-1">{skill.name}</span>
+                </div>
+              )}
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-xs sm:text-sm font-bold">
                   {skill.name}
                 </p>
