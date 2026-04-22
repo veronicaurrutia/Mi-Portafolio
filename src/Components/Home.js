@@ -28,13 +28,13 @@ function Home() {
             </h1>
             <div className="typing-container">
               <p className="typing-text animate-typing mt-4">
-                Desarrolladora Web Front-End
+                Desarrolladora Full-Stack
               </p>
             </div>
             <p className="text-lg md:text-xl text-white mt-4 animate-zoom-in-out">
-              Desarrolladora Frontend apasionada por los diseños intuitivos y
-              estéticamente agradables. Busco crear proyectos que ofrezcan la
-              mejor experiencia al usuario.
+              Desarrolladora Full-Stack apasionada por innovar, crear y crecer.
+              Combino desarrollo web con conocimientos en UX/UI para construir
+              experiencias digitales que marcan la diferencia.
             </p>
             {/* Botones */}
             <div className="mt-8 flex gap-4">

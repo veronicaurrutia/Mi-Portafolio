@@ -47,17 +47,23 @@ const About = () => {
         >
           <h2 className="text-5xl font-bold mb-6 text-white">Sobre mí</h2>
           <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-          Tengo experiencia en diseño y desarrollo web, así como en pruebas y depuración 
-          de código. Soy experto en React, HTML, CSS, JavaScript,Tailwind y SQL. 
-          En mi puesto anterior en Rayensalud, diseñé y desarrollé proyectos web. 
-          Identifiqué problemas y creé soluciones. También probé interfaces de usuario y documenté mi trabajo. Mi experiencia en enfermería me ha enseñado la importancia del trabajo en equipo y la atención al detalle. Soy adaptable y proactivo. Disfruto trabajando en entornos dinámicos y estoy ansioso por crecer en mi carrera.
-           Creo que mis habilidades y experiencia se alinean bien con sus necesidades.
+            Soy Desarrolladora Full-Stack con experiencia en diseño, desarrollo web y UX/UI.
+            Me apasiona <span className="text-customBrown font-semibold">innovar, crear y crecer</span> en cada proyecto que emprendo.
+            He trabajado en empresas como Rayensalud y Loginsa, y actualmente formo parte del
+            equipo de <span className="text-customBrown font-semibold">DIT Chile</span>, donde sigo
+            construyendo soluciones digitales de alto impacto.
+          </p>
+          <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+            Mi formación en UX/UI me permite pensar siempre en la experiencia del usuario,
+            combinando estética y funcionalidad. Domino tecnologías como React, JavaScript,
+            HTML, CSS, Tailwind y SQL, tanto en el frontend como en el backend, lo que me
+            da una visión integral del ciclo de desarrollo.
           </p>
           <p className="text-gray-300 leading-relaxed text-lg">
-            Soy una persona empática, autodidacta y entusiasta, con competencias enfocadas en
-            el trabajo en equipo, comunicación asertiva, resolución de
-            problemas, responsable y proactiva. Me gusta aprender de los demás y
-            superarme continuamente.
+            Soy una persona empática, autodidacta y entusiasta. Me enfoco en el
+            trabajo en equipo, la comunicación asertiva y la resolución de problemas.
+            Creo firmemente que la tecnología es una herramienta para transformar ideas
+            en realidades que impactan positivamente a las personas.
           </p>
         </div>
 
