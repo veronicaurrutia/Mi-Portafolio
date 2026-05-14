@@ -42,30 +42,25 @@ const Jobs = () => {
           }`}
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">
-            Trabajo
+            Trabajos
           </h2>
           <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-brown-500">
             Rayensalud
           </h3>
           <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
-            En mi tiempo en Rayen Salud, fui parte de un equipo que transformó y
-            optimizó experiencias digitales, trabajando con tecnologías como
-            React, HTML, CSS, y JavaScript. Allí aprendí a gestionar el ciclo
-            completo de desarrollo, desde la detección de errores hasta la
-            implementación de soluciones prácticas, y realicé pruebas
-            exhaustivas de código y producto, garantizando la calidad y
-            estabilidad de las aplicaciones.
+           Front-End Developer
+Desarrollé interfaces web con React, JavaScript, HTML y CSS, mejorando la experiencia de usuarios en sistemas de salud.
+Participé en el ciclo completo de desarrollo: debugging, testing y optimización de aplicaciones.
+También trabajé con C# y bases de datos, fortaleciendo mi enfoque full stack.
             <br />
             <br />
-            Además, adquirí experiencia utilizando Aurelia y C#, lo que amplió
-            mi conocimiento en frameworks y lenguajes avanzados, y fortalecí mi
-            capacidad para trabajar tanto en contextos de front-end como de
-            back-end. También tuve la oportunidad de profundizar en la
-            integración de bases de datos, permitiéndome abordar proyectos de
-            manera integral. Mi compromiso con el aprendizaje continuo me llevó
-            a obtener certificaciones en SQL y UX/UI, herramientas que
-            complementan mi capacidad para diseñar experiencias de usuario
-            eficientes y gestionar información de manera estructurada.
+  <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-brown-500">
+            Loginsa
+          </h3>
+Ingeniera WMS
+Desarrollo soluciones para sistemas logísticos utilizando Vue.js, Node.js, NestJS y C#.
+Optimicé procesos mediante automatización, mejorando la eficiencia operativa.
+Trabajo en integración frontend-backend y aplico principios de UX/UI en herramientas internas.
           </p>
         </div>
         <div

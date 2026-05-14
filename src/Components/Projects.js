@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Ham from "./img/burger.png";
-import Pet from "./img/pet.png";
-import RedSocial from "./img/red social.png";
+import Ruleta from "./img/ruleta.png";
 import Tenpo from "./img/Tenpo.png";
 
 const projects = [
@@ -11,7 +9,7 @@ const projects = [
       "La presente Aplicación fue pensada principalmente para ser la solucion para meseros y chefs que integran un restaurante, con el propósito que puedan compartir la información de cada solicitud de pedido logrando de esta manera una comunicación fluida y eficiente, mejorando así tanto la atención prestada cómo los tiempos de entrega.",
     link: "https://burg-d5429.web.app/",
     links: "https://github.com/veronicaurrutia/burger-queen",
-    image: Ham,
+    //image: ,
   },
   {
     name: "Pet Places",
@@ -19,15 +17,15 @@ const projects = [
       "Pet places es una App mobile diseñada para dar solución en el contexto de la movilidad e inclusión en la ciudad de personas que presenten algún tipo de trastorno adaptativo y que necesiten estar acompañada constantemente de su mascota de contención emocional.",
     link: "https://here-61f73.web.app/",
     links: "https://github.com/veronicaurrutia/SCL012-here-app",
-    image: Pet,
+    //image: ,
   },
   {
-    name: "Red social",
+    name: "Ruleta social",
     description:
       "Sparrow Player es una Red Social sobre Juegos de mesa, donde podras compartir tus opiniones con otros jugadores y enterarte de próximos eventos. Además los otros participantes podran dar puntuacion de tus publicaciones y para así ser el jugador con más experiencia.",
-    link: "https://social-network-3c789.web.app/#/login",
-    links: "https://github.com/veronicaurrutia/SCL012-Social-Network",
-    image: RedSocial,
+    link: "https://ruleta-social.vercel.app/",
+    links: "https://github.com/veronicaurrutia/ruleta-social",
+    image: Ruleta,
   },
   {
     name: "Tenpo",

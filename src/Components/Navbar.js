@@ -113,7 +113,7 @@ const Navbar = () => {
               onClick={closeMenu} // Cierra el menú al hacer clic
               className="block py-2 px-4 hover:text-customBrown transition duration-300"
             >
-              Trabajo
+              Trabajos
             </a>
           </li>
           <li>
